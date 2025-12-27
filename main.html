@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="container">
+                    <img src="img/apple.jpg" alt="Apple logo"/>
+                    <nav class="menu">
+                        <ul>
+                            <li><a style="list-style: none; text-decoration: none; color: white;" href="#">Контакты</a></li>
+                            <li><a style="list-style: none; text-decoration: none; color: white;" href="#">Регистрация</a></li>
+                            <li><a style="list-style: none; text-decoration: none; color: white;" href="#" id="login-btn">Вход</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <button type="button" class="toggle-menu" aria-label="Открыть меню">
+                    <img src="img/burger-menu.png" alt="Menu"/>
+                </button>
+            </div>
+        </header>
+
+        <form method="POST">
+            <div class="popup hidden" id="login-popup">
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Pass"/>
+                <button type="submit">Войти</button>
+            </div>
+        </form>
+
+        <form action="#" method="GET" role="search" aria-label="форма поиска">
+            <label for="search-input" hidden>Ищите здесь</label>
+            <input type="search" id="search-input" placeholder="Что ищете?">
+            <button type="submit"><span class="visual-hidden">Поиск</span></button>
+        </form>
+        
+
+        <div class="sliders">
+            <img src="img/slider1.jpg">
+            <img src="img/slider2.jpg">
+            <img src="img/slider3.jpg">
+            <img src="img/slider4.jpg">
+            
+        </div>
+
+        <footer>
+            <p>Наша почта: support@email.com </p>
+            <p>Телефон: 7(989)567-34-22</p>
+            <p>Розовое Превосходное</p>
+            <p>Copyright © все права защищены</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
